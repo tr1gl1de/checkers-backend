@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkers-backend.Domain", "checkers-backend.Domain\checkers-backend.Domain.csproj", "{5E502ACE-1677-4B83-A456-179436941C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGame", "TestGame\TestGame.csproj", "{6DA77290-1338-4A46-987D-2C2417F781B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E502ACE-1677-4B83-A456-179436941C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E502ACE-1677-4B83-A456-179436941C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E502ACE-1677-4B83-A456-179436941C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E502ACE-1677-4B83-A456-179436941C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA77290-1338-4A46-987D-2C2417F781B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA77290-1338-4A46-987D-2C2417F781B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA77290-1338-4A46-987D-2C2417F781B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA77290-1338-4A46-987D-2C2417F781B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
