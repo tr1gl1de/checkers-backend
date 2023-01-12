@@ -1,30 +1,36 @@
-﻿namespace checkers_backend.Domain.Entities;
+﻿using checkers_backend.Domain.Enums;
+
+namespace checkers_backend.Domain.Entities;
 
 public class SessionGame
 {
-    public SessionGame(GameBoard gameBoard, Player masterPlayer)
+    public SessionGame(GameBoard gameBoard, string ownerUsername)
     {
         GameBoard = gameBoard;
-        MasterPlayer = masterPlayer;
+        OwnerUsername = ownerUsername;
     }
 
     /// <summary>
     /// Game session identifier
     /// </summary>
     public Guid Id { get; } = Guid.NewGuid();
-    
+
+    /// <summary>
+    /// Username of creator this game session
+    /// </summary>
+    public string OwnerUsername { get; }
+
     /// <summary>
     /// Game field
     /// </summary>
-    public GameBoard GameBoard { get; set; }
+    public GameBoard GameBoard { get; }
     
     /// <summary>
-    /// Owner game session
+    /// color of player turn
     /// </summary>
-    public Player MasterPlayer { get; }
+    public Color WhoseTurn { get; set; }
 
-    /// <summary>
-    /// Guest player
-    /// </summary>
-    public Player? BasicPlayer { get; set; } = null;
+    public Player WhitePlayer { get; } = new(Color.White);
+
+    public Player BlackPlayer { get; set; } = new(Color.Black);
 }

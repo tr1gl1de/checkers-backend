@@ -4,13 +4,15 @@ namespace checkers_backend.Domain.Entities;
 
 public class Player
 {
-    public Player(Guid id, Color color)
+    public Player(Color color, string? username = null)
     {
-        Id = id;
         Color = color;
+        Username = username;
     }
 
     public Guid Id { get; } = Guid.NewGuid();
 
     public Color Color { get; set; }
+
+    public string? Username { get; set; } = null;
 }
