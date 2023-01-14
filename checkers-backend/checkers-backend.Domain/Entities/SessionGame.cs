@@ -32,5 +32,5 @@ public class SessionGame
 
     public Player WhitePlayer { get; } = new(Color.White);
 
-    public Player BlackPlayer { get; set; } = new(Color.Black);
+    public Player BlackPlayer { get; } = new(Color.Black);
 }

@@ -1,5 +1,4 @@
 ﻿using checkers_backend.Domain.Entities;
-using checkers_backend.Domain.Enums;
 using MediatR;
 
 namespace checkers_backend.Application.Game.CreateGame;

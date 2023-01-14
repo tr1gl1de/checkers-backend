@@ -3,9 +3,9 @@ using MediatR;
 
 namespace checkers_backend.Application.Game.ChooseColor;
 
-public class ChooseColorCommandHandler : IRequestHandler<ChooseColorCommand>
+public class ChooseColorCommandHandler : IRequestHandler<ChooseColorCommand, Color>
 {
-    public Task<Unit> Handle(ChooseColorCommand request, CancellationToken cancellationToken)
+    public Task<Color> Handle(ChooseColorCommand request, CancellationToken cancellationToken)
     {
         switch (request.Color)
         {
@@ -19,6 +19,6 @@ public class ChooseColorCommandHandler : IRequestHandler<ChooseColorCommand>
                 throw new ArgumentOutOfRangeException();
         }
 
-        return Unit.Task;
+        return Task.FromResult(request.Color);
     }
 }

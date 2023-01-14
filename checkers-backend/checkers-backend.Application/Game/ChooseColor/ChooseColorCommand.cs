@@ -4,7 +4,7 @@ using MediatR;
 
 namespace checkers_backend.Application.Game.ChooseColor;
 
-public class ChooseColorCommand : IRequest
+public class ChooseColorCommand : IRequest<Color>
 {
     public ChooseColorCommand(Color color, SessionGame sessionGame, User user)
     {

@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGame", "TestGame\TestGa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkers-backend.Application", "checkers-backend.Application\checkers-backend.Application.csproj", "{1E0C36BF-A51B-4AF9-BA65-27ECC2C657FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{1E28C2D8-D827-4C7B-A14B-C1EC0946C0E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CBEDB4C7-A520-4ACE-A0A0-B2AAB01105C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,10 @@ Global
 		{1E0C36BF-A51B-4AF9-BA65-27ECC2C657FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E0C36BF-A51B-4AF9-BA65-27ECC2C657FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E0C36BF-A51B-4AF9-BA65-27ECC2C657FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E0C36BF-A51B-4AF9-BA65-27ECC2C657FA} = {1E28C2D8-D827-4C7B-A14B-C1EC0946C0E2}
+		{5E502ACE-1677-4B83-A456-179436941C38} = {1E28C2D8-D827-4C7B-A14B-C1EC0946C0E2}
+		{6DA77290-1338-4A46-987D-2C2417F781B0} = {1E28C2D8-D827-4C7B-A14B-C1EC0946C0E2}
 	EndGlobalSection
 EndGlobal
